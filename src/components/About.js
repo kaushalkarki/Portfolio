@@ -1,12 +1,10 @@
 import React from 'react'
-import Navbar from './Navbar'
 
 const About = () => {
     return (
         <div>
-             <div className="about-div d-grid w-100">
-                <div>  <Navbar /> </div>
-                <div id="me-div">
+             <div className="container  ">
+                <div id="me-div" className='text-justify'>
                     <p id="me" >
                         Hello My name is Kaushal Karki. I am from Haldwani Uttarakhand. I have done graduation as Bachelor
                          of Science from Kumaun University Nainital in the year 2018. Currently I am pursuing Master in Computer Application from Govind 

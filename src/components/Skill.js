@@ -1,12 +1,10 @@
 import React from 'react'
-import Navbar from './Navbar'
 import { ProgressBar } from "react-bootstrap"
 const Skill = () => {
 
     // const[myState,setMyState]=useState[(0)]
     return (
         <div className="skills-div d-grid w-100">
-            <div>  <Navbar /> </div>
             <div className='row w-100'>
                 <div className='col skills-col '>
                     <ul>

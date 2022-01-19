@@ -1,21 +1,22 @@
 import React from "react-dom";
 import "./style.css";
-import Main from "./Main";
-import Skill from "./Skill";
-import Contact from "./Contact";
-import About from "./About";
-import {BrowserRouter as Router,Route, Routes} from "react-router-dom"
+import Main from "./components/Main";
+import Skill from "./components/Skill";
+import Contact from "./components/Contact";
+import About from "./components/About";
+import {Route, Routes} from "react-router-dom"
+import Navbar from "./components/Navbar";
 function App() {
   return (
    <>
-   <Router>
+   
+     <Navbar/>
     <Routes>
         <Route exact path="/" element={<Main/>} />
         <Route exact path="/skills" element={<Skill/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/about" element={<About/>} />
       </Routes>
-      </Router>
    </>
   );
 }
