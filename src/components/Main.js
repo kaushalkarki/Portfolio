@@ -23,8 +23,8 @@ const Main = () => {
                        <NavLink to={"/skills"}> <Button className='bg-danger' id='btn1'>PORTFOLIO</Button></NavLink>
                        {/* <a href={"../public/Resume2022.pdf"} download="Resume2022.pdf"><Button className='bg-danger' id='btn2'>DOWNLOAD RESUME</Button></a> */}
                     </div>
-                    <div className='col sm-pl-3 sm-pr-3  main-right-col'>
-                        <img src={dp} id='pic' alt="profile pic" />
+                    <div className=' '>
+                        <img src={dp} id='pic' className=" ml-2" alt="profile pic" />
 
                     </div>
                 </div>
