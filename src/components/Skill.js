@@ -1,61 +1,57 @@
-import React from 'react'
-import { ProgressBar } from "react-bootstrap"
-const Skill = () => {
+import React from 'react';
+import '../styles/Skills.css';
 
-    // const[myState,setMyState]=useState[(0)]
-    return (
-        <div className="container skills-div d-lg-flex d-sm-grid w-100">
-            <div className='row w-100 d-flex mx-auto'>
-                <div className='col-sm-8 sm-overlay-4 col-lg-6  '>
-                    
-                        <li className='skill-list'>HTML
-                            <ProgressBar className='bars '  variant="info" animated="true" min={0}  now={90} label={`90%`} />
-                        </li>
-                        <li className='skill-list'>CSS
-                            <ProgressBar className='bars ' variant="info" animated="true" now={90} label={`90%`}/>
+import rubyLogo from '../images/ruby.jpeg';
+import jsLogo from '../images/javascript.png';
+import reactLogo from '../images/react.png';
+import mysqlLogo from '../images/mysql.png';
+import gitLogo from '../images/git.png';
+import jiraLogo from '../images/jira.jpeg';
+import aiLogo from '../images/ai.png';
+import gcpLogo from '../images/gcp.png';
+import cLogo from '../images/c.png';
+import dockerLogo from '../images/docker.png';
+import cert1 from '../images/Cert1.png';
+import cert2 from '../images/Cert2.png';
 
-                        </li>
-                        <li className='skill-list'>JavaScript
-                            <ProgressBar className='bars ' variant="info" animated="true" now={70} label={`70%`}/>
+const skillsData = [
+  { name: 'Ruby on Rails', value: 80, logo: rubyLogo },
+  { name: 'JavaScript', value: 70, logo: jsLogo },
+  { name: 'React', value: 75, logo: reactLogo },
+  { name: 'MySQL', value: 70, logo: mysqlLogo },
+  { name: 'Git', value: 80, logo: gitLogo },
+  { name: 'JIRA', value: 60, logo: jiraLogo },
+  { name: 'Artificial Intelligence', value: 65, logo: aiLogo },
+  { name: 'Google Cloud Platform', value: 60, logo: gcpLogo },
+  { name: 'C/C++', value: 75, logo: cLogo },
+  { name: 'Docker', value: 70, logo: dockerLogo },
+];
 
-                        </li>
-                        <li className='skill-list'>ReactJS
-                            <ProgressBar className='bars ' variant="info" animated="true" now={70} label={`70%`}/>
-                        </li>
-                        <li className='skill-list'>C
-                            <ProgressBar className='bars ' variant="info" animated="true" now={80} label={`80%`}/>
-                        </li>
+const Skills = () => {
+  return (
+    <div className="skills-container">
+      <h1>Skills</h1>
+      <div className="skills-list">
+        {skillsData.map((skill, index) => (
+          <SkillTile key={index} skill={skill} />
+        ))}
+      </div>
+      <h1>Certificates</h1>
+      <div className="certificates-container">
+        <img src={cert1} alt="cert1" className="cert-img" />
+        <img src={cert2} alt="cert2" className="cert-img" />
+      </div>
+    </div>
+  );
+};
 
+const SkillTile = ({ skill }) => {
+  return (
+    <div className="skill-tile">
+      <img src={skill.logo} alt={`${skill.name} logo`} className="skill-logo" />
+      <span className="skill-name">{skill.name}</span>
+    </div>
+  );
+};
 
-
-                    
-
-                </div>
-                <div className='col   '>
-                    
-                    <li className='skill-list'>Java
-                        <ProgressBar className='bars ' variant="info" animated="true" now={70} label={`70%`}/>
-                    </li>
-                    <li className='skill-list'>NodeJS
-                        <ProgressBar className='bars ' variant="info" animated="true" now={50} label={`50%`}/>
-                    </li>
-
-                    <li className='skill-list'>MongoDB
-                        <ProgressBar className='bars ' variant="info" animated="true" now={70}label={`70%`} />
-                    </li>
-
-                    <li className='skill-list'>MySQL
-                        <ProgressBar className='bars ' variant="info" animated="true" now={75} label={`75%`}/>
-                    </li>
-
-                    <li className='skill-list'>Git
-                        <ProgressBar className='bars ' variant="info" animated="true" now={70}label={`70%`} />
-                    </li>
-                    
-                </div>
-            </div>
-        </div>
-    )
-}
-
-export default Skill;
+export default Skills;
