@@ -1,0 +1,81 @@
+/* styles/Connect.css */
+
+.connect-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333; /* Keeping the main text color dark for readability */
+  background-color: #fff; /* White background for a clean look */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.connect-container__header {
+  color: #0056b3; /* Darker blue for the heading */
+  margin-bottom: 20px;
+  position: relative;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.connect-container__social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.connect-container__social-link {
+  margin: 10px 0;
+  color: #0073e6; /* Blue for links */
+  font-size: 1.5em;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s, transform 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.connect-container__social-link i {
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.connect-container__social-link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0073e6;
+  transform: translateX(-50%) scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.connect-container__social-link:hover {
+  color: #004494; /* Darker blue on hover */
+  transform: translateY(-3px);
+}
+
+.connect-container__social-link:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.connect-container__social-link:hover i {
+  transform: scale(1.2);
+}

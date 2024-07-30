@@ -19,7 +19,7 @@
 }
 
 .nav-item a {
-  color: #fff;
+  color: #fff; /* Default text color */
   text-decoration: none;
   padding: 8px 16px;
   display: block;
@@ -27,6 +27,7 @@
 
 .nav-item a:hover {
   background-color: #555;
+  color: #fff; /* Ensure text color remains white on hover */
 }
 
 .nav-item.active a {
