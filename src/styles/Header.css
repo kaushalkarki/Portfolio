@@ -15,7 +15,7 @@
 }
 
 .nav-item {
-  margin: 0 10px;
+  margin: 0 10px 0 0;
 }
 
 .nav-item a {
@@ -32,4 +32,12 @@
 
 .nav-item.active a {
   background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .nav-item a {
+    color: #fff; /* Default text color */
+    text-decoration: none;
+    display: block;
+  }
 }
