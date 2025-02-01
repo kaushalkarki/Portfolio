@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>&copy; 2024 Kaushal Karki. All rights reserved.</p>
+        <p>&copy; 2025 Kaushal Karki. All rights reserved.</p>
         <div className="social-links">
           <a href="https://www.linkedin.com/in/kaushalkarki" target="_blank" rel="noreferrer">
             <i className="zmdi zmdi-linkedin"></i>

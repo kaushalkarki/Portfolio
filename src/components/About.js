@@ -8,28 +8,25 @@ const About = () => {
       <div className="about-section">
         <h2>Introduction</h2>
         <p>
-          Hello! I'm Kaushal Karki, a passionate and dedicated software engineer with over 2.5 years of experience in the industry. My journey in software development has been driven by a love for solving complex problems and creating efficient, user-friendly applications.
+        Hello! I'm Kaushal Karki, a results-driven Software Engineer with over 3 years of experience crafting scalable, high-performance applications. My passion lies in solving complex problems, optimizing systems, and building intuitive user experiences. I thrive in fast-paced environments, leveraging cutting-edge technologies to develop efficient, maintainable, and future-proof solutions.
+        With a strong foundation in Ruby on Rails, React, and cloud-based architectures, I specialize in creating seamless, high-quality applications that enhance business efficiency. I’m committed to continuous learning, writing clean, test-driven code, and collaborating with teams to drive innovation and excellence.
         </p>
       </div>
       <div className="about-section">
         <h2>Education</h2>
         <p>
-          I graduated from Govind Ballabh Pant University of Agriculture & Technology with a degree in MCA, where I developed a strong foundation in computer science principles and software engineering practices. My time at university was filled with various projects, internships, and research opportunities that fueled my passion for technology.
+        I hold a Master of Computer Applications (MCA) from Govind Ballabh Pant University of Agriculture & Technology, where I built a strong foundation in computer science principles, software engineering, and problem-solving. During my time there, I actively engaged in projects, internships, and leadership roles, further refining my technical expertise and collaboration skills.
+        Prior to that, I earned my Bachelor of Science (B.Sc.) in Physics, Chemistry, and Mathematics from Kumaun University, Nainital. This interdisciplinary background has honed my analytical thinking, logical reasoning, and structured problem-solving approach, which I apply daily in software development.
         </p>
       </div>
       <div className="about-section">
         <h2>Professional Background</h2>
         <p>
-          After graduation, I started my career as an Intern at Grey Scientic Labs, where I worked as React developer. This experience taught me the importance of writing clean, maintainable code and collaborating effectively with cross-functional teams.
+        With over 3 years of experience as a Software Engineer, I have honed my skills in backend and full-stack development, specializing in Ruby on Rails, React.js, and scalable API architectures.
+        At Maropost, I played a pivotal role in designing, developing, and optimizing RESTful APIs, ensuring high performance, security, and scalability. I spearheaded efforts to enhance database efficiency, reducing query execution time by 40%, and implemented robust RSpec test suites to maintain 90%+ test coverage. My contributions in code reviews, architectural decisions, and AI-powered integrations significantly improved product quality and business efficiency.
+        As a React Intern at Grey Scientific Labs, I built modular, reusable frontend components, improved state management, and optimized application performance for a seamless user experience.
+        My experience has taught me the importance of writing clean, maintainable code, collaborating in cross-functional teams, and continuously learning to stay ahead of industry trends.
         </p>
-        <p>
-          Currently, I am working at Maropost, where I specialize in full-stack development with a focus on Ruby on Rails and React. Some of my notable projects include:
-        </p>
-        <ul>
-          <li>Developed sophisticated segments using OpenAI's fine-tuning capabilities, enhancing user engagement and personalization.</li>
-          <li>Designed and implemented a dynamic email content rendering service in Golang, improving the efficiency of marketing campaigns.</li>
-          <li>Resolved critical issues in an expense management application, ensuring data integrity and enhancing the user experience.</li>
-        </ul>
       </div>
       <div className="about-section">
         <h2>Hobbies and Interests</h2>
